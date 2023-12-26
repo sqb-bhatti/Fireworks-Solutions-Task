@@ -338,6 +338,7 @@
 				DEVELOPMENT_TEAM = 48T2248AE2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FireworksSolutionsTask/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location access to get information about associated colleges";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -367,6 +368,7 @@
 				DEVELOPMENT_TEAM = 48T2248AE2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FireworksSolutionsTask/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location access to get information about associated colleges";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
