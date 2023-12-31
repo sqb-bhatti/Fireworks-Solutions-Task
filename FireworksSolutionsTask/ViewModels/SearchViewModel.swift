@@ -9,6 +9,12 @@ import UIKit
 import CoreLocation
 
 class SearchViewModel {
+//    let colleges: CountryResponse?
+//    
+//    init(colleges: CountryResponse) {
+//        self.colleges = colleges
+//    }
+    
     // MARK: - Properties
     
     var labelText: String {
@@ -18,6 +24,12 @@ class SearchViewModel {
     var labelFont: UIFont {
         return UIFont.systemFont(ofSize: 24, weight: .semibold)
     }
+    
+    var buttonTitle: String {
+        return "View Colleges"
+    }
+    
+    var buttonAction: (() -> Void)?
     
     var textFieldText: String {
         return "Enter Destination"
@@ -48,4 +60,8 @@ class SearchViewModel {
     var hasLocations: Bool { return numberOfLocations > 0 }
     var numberOfLocations: Int { return locations.count }
     
+    func handleButtonTap() {
+        buttonAction?()
+    }
 }
+

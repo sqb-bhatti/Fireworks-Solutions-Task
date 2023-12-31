@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1E4F52316EFF8E91B5911D7B /* Pods_FireworksSolutionsTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C0C0404825C7647814C9AE /* Pods_FireworksSolutionsTask.framework */; };
+		D44A11ED2B407E1C0013AA74 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44A11EC2B407E1C0013AA74 /* WebPageViewController.swift */; };
+		D44A11EF2B407F7C0013AA74 /* WebPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44A11EE2B407F7C0013AA74 /* WebPageViewModel.swift */; };
 		D4B00DFC2B3A8300000BD937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B00DFB2B3A8300000BD937 /* AppDelegate.swift */; };
 		D4B00DFE2B3A8300000BD937 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B00DFD2B3A8300000BD937 /* SceneDelegate.swift */; };
 		D4B00E002B3A8300000BD937 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B00DFF2B3A8300000BD937 /* MapViewController.swift */; };
@@ -16,14 +18,20 @@
 		D4B00E082B3A8302000BD937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B00E062B3A8302000BD937 /* LaunchScreen.storyboard */; };
 		D4B00E172B3BF1C9000BD937 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B00E162B3BF1C9000BD937 /* LocationManager.swift */; };
 		D4B00E192B3BF28E000BD937 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B00E182B3BF28E000BD937 /* SearchViewController.swift */; };
-		D4B00E1B2B3BF4CB000BD937 /* MapViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B00E1A2B3BF4CB000BD937 /* MapViewViewModel.swift */; };
+		D4B00E1B2B3BF4CB000BD937 /* CollegeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B00E1A2B3BF4CB000BD937 /* CollegeViewModel.swift */; };
 		D4B00E1D2B3C0DE3000BD937 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B00E1C2B3C0DE3000BD937 /* SearchViewModel.swift */; };
+		D4B00E1F2B3C9211000BD937 /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B00E1E2B3C9211000BD937 /* College.swift */; };
+		D4B00E222B3C95BE000BD937 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B00E212B3C95BE000BD937 /* WebService.swift */; };
+		D4B00E252B3C97AC000BD937 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B00E242B3C97AC000BD937 /* Constants.swift */; };
+		D4B00E272B3C9FB1000BD937 /* CollegesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B00E262B3C9FB1000BD937 /* CollegesListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A48EEA60D41ACB926A651AE /* Pods-FireworksSolutionsTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireworksSolutionsTask.release.xcconfig"; path = "Target Support Files/Pods-FireworksSolutionsTask/Pods-FireworksSolutionsTask.release.xcconfig"; sourceTree = "<group>"; };
 		AC1BE1C8E9B4B1D5ACBB32DC /* Pods-FireworksSolutionsTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireworksSolutionsTask.debug.xcconfig"; path = "Target Support Files/Pods-FireworksSolutionsTask/Pods-FireworksSolutionsTask.debug.xcconfig"; sourceTree = "<group>"; };
 		C1C0C0404825C7647814C9AE /* Pods_FireworksSolutionsTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireworksSolutionsTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44A11EC2B407E1C0013AA74 /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
+		D44A11EE2B407F7C0013AA74 /* WebPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewModel.swift; sourceTree = "<group>"; };
 		D4B00DF82B3A8300000BD937 /* FireworksSolutionsTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireworksSolutionsTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B00DFB2B3A8300000BD937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4B00DFD2B3A8300000BD937 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +42,12 @@
 		D4B00E092B3A8302000BD937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4B00E162B3BF1C9000BD937 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		D4B00E182B3BF28E000BD937 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		D4B00E1A2B3BF4CB000BD937 /* MapViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewModel.swift; sourceTree = "<group>"; };
+		D4B00E1A2B3BF4CB000BD937 /* CollegeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeViewModel.swift; sourceTree = "<group>"; };
 		D4B00E1C2B3C0DE3000BD937 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		D4B00E1E2B3C9211000BD937 /* College.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
+		D4B00E212B3C95BE000BD937 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		D4B00E242B3C97AC000BD937 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D4B00E262B3C9FB1000BD937 /* CollegesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegesListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,8 @@
 		D4B00DFA2B3A8300000BD937 /* FireworksSolutionsTask */ = {
 			isa = PBXGroup;
 			children = (
+				D4B00E232B3C9799000BD937 /* Utils */,
+				D4B00E202B3C95A3000BD937 /* Services */,
 				D4B00E152B3BF1B5000BD937 /* Managers */,
 				D4B00E142B3AA350000BD937 /* Resources */,
 				D4B00E122B3A839E000BD937 /* Views */,
@@ -105,6 +119,8 @@
 			children = (
 				D4B00DFF2B3A8300000BD937 /* MapViewController.swift */,
 				D4B00E182B3BF28E000BD937 /* SearchViewController.swift */,
+				D4B00E262B3C9FB1000BD937 /* CollegesListTableViewController.swift */,
+				D44A11EC2B407E1C0013AA74 /* WebPageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -112,6 +128,7 @@
 		D4B00E102B3A8337000BD937 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D4B00E1E2B3C9211000BD937 /* College.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -119,8 +136,9 @@
 		D4B00E112B3A8340000BD937 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				D4B00E1A2B3BF4CB000BD937 /* MapViewViewModel.swift */,
+				D4B00E1A2B3BF4CB000BD937 /* CollegeViewModel.swift */,
 				D4B00E1C2B3C0DE3000BD937 /* SearchViewModel.swift */,
+				D44A11EE2B407F7C0013AA74 /* WebPageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -157,6 +175,22 @@
 				D4B00E162B3BF1C9000BD937 /* LocationManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		D4B00E202B3C95A3000BD937 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D4B00E212B3C95BE000BD937 /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D4B00E232B3C9799000BD937 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D4B00E242B3C97AC000BD937 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,11 +308,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B00E1B2B3BF4CB000BD937 /* MapViewViewModel.swift in Sources */,
+				D44A11ED2B407E1C0013AA74 /* WebPageViewController.swift in Sources */,
+				D44A11EF2B407F7C0013AA74 /* WebPageViewModel.swift in Sources */,
+				D4B00E222B3C95BE000BD937 /* WebService.swift in Sources */,
+				D4B00E1B2B3BF4CB000BD937 /* CollegeViewModel.swift in Sources */,
 				D4B00E1D2B3C0DE3000BD937 /* SearchViewModel.swift in Sources */,
 				D4B00E192B3BF28E000BD937 /* SearchViewController.swift in Sources */,
+				D4B00E1F2B3C9211000BD937 /* College.swift in Sources */,
+				D4B00E252B3C97AC000BD937 /* Constants.swift in Sources */,
 				D4B00E172B3BF1C9000BD937 /* LocationManager.swift in Sources */,
 				D4B00E002B3A8300000BD937 /* MapViewController.swift in Sources */,
+				D4B00E272B3C9FB1000BD937 /* CollegesListTableViewController.swift in Sources */,
 				D4B00DFC2B3A8300000BD937 /* AppDelegate.swift in Sources */,
 				D4B00DFE2B3A8300000BD937 /* SceneDelegate.swift in Sources */,
 			);
